@@ -1,7 +1,7 @@
 import re
-from utils.pdf_to_text import exportTextFromPdf
 
 class Function:
+
     def __init__(self):
         pass
 
