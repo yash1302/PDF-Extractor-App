@@ -21,7 +21,7 @@ This Python script is designed to download a file from a URL and to extract info
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yash1302/ScrapePdfText.git
+   https://github.com/yash1302/PDF-Extractor-App.git
    ```
 
 2. Navigate to the project directory:
