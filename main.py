@@ -22,13 +22,17 @@ def main():
     final_data = {}
 
     for count,url in enumerate(json_data):
-        # pdfDownload.pdfStoring(url)
+        pdfDownload.pdfStoring(url)
         SplittedUrl = url.split("/")[-1]
         # print(SplittedUrl)
         pdfText = pdf_to_text.exportTextFromPdf(SplittedUrl,page_no)
         final_data[count] = scrapeText.TextScrapping(pdfText)
         # print(final_data)
-    print(final_data)
+    json_object = json.dumps(final_data, indent=4)
+    with open("output.json", "w") as outfile:
+        outfile.write(json_object)
+
+    # print(final_data)
 
 
 if __name__ == '__main__':
