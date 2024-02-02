@@ -5,7 +5,7 @@ def main():
 
     
     try:
-        with open("C:\\Users\\yashvardhan_Jadhav\\Desktop\\extractPdfText\\config.json","r") as file:
+        with open("config.json","r") as file:
             json_loaded = json.load(file)
         logger.logMessage("input from Json file is loaded")
         url_data = json_loaded['urls']
